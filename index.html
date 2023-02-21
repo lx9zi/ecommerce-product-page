@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <nav class="navbar">
+    <div class="toggle" id="toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <div class="logo">
+      <h2>sneakers</h2>
+    </div>
+    <ul class="items">
+      <li><a href="#">Collection</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="cart-avatar">
+      <div class="cart-number">
+        <span id="cart-number"></span>
+        <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+      </div>
+      <img src="/images/image-avatar.png" alt="">
+
+
+    </div>
+  </nav>
+  <!-- Cart panel -->
+  <div class="cart-panel" id="cart-panel">
+    <h4>Cart</h4>
+    <h2 class="center-text" id="Empty">Your cart is empty.</h2>
+    <div class="content-penel" id="NotEmpty">
+      <img src="/images/image-product-1.jpg" alt="">
+      <div class="total">
+        <p>Fall Limited Edition Sneakers</p>
+        <div class="totalNumber">
+          <h4 class="price-item">$125.00×</h4><span id="qu">3</span><span id="price">$350.00</span>
+        </div>
+      </div>
+      <i class="fa-solid fa-trash-can" id="crach"></i>
+      <button>Check Out</button>
+    </div>
+  </div>
+
+  <section class="main">
+    <div class="left-side">
+      <div class="larg-image">
+        <img src="/images/image-product-1.jpg" alt="">
+      </div>
+      <div class="small-image">
+        <img src="/images/image-product-1-thumbnail.jpg" alt="">
+        <img src="/images/image-product-2-thumbnail.jpg" alt="">
+        <img src="/images/image-product-3-thumbnail.jpg" alt="">
+        <img src="/images/image-product-4-thumbnail.jpg" alt="">
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="title">
+        <h3>Sneaker company</h3>
+        <h2>Fall Limited Edition<span>Sneakers</span></h2>
+      </div>
+      <div class="pragraph">
+        <p>These low-progile sneajers are your perfect casual wear companion.Featuring a durable rubber outer sole,
+          they'll withstand everything the warther can offer.</p>
+      </div>
+      <div class="price">
+        <h2>$125.00</h2>
+        <h4 class="discound">50%</h4>
+        <div class="price-before">
+          <del>$250.00</del>
+        </div>
+      </div>
+      <div class="price-button">
+        <div class="quantaty">
+          <i class="fa-solid fa-minus" id="minus"></i>
+          <h2 id="quantity-number">0</h2>
+          <i class="fa-solid fa-plus" id="plus"></i>
+        </div>
+
+        <button id="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="photo-gallery">
+    <div class="content">
+      <i class="fa-solid fa-xmark" id="exit-icon"></i>
+      <div class="images">
+        <img src="/images/image-product-1.jpg">
+        <img src="/images/image-product-2.jpg">
+        <img src="/images/image-product-3.jpg">
+        <img src="/images/image-product-4.jpg">
+        <img src="/images/image-product-1.jpg">
+      </div>
+
+      <div onclick="side_slide(-1)" class="left-btn">
+        <i class="fa-solid fa-chevron-left" id="left"></i>
+      </div>
+      <div onclick="side_slide(1)" class="right-btn">
+        <i class="fa-solid fa-chevron-right" id="right"></i>
+      </div>
+
+    </div>
+    <div class="small-image2">
+      <img src="/images/image-product-1-thumbnail.jpg" alt="">
+      <img src="/images/image-product-2-thumbnail.jpg" alt="">
+      <img src="/images/image-product-3-thumbnail.jpg" alt="">
+      <img src="/images/image-product-4-thumbnail.jpg" alt="">
+    </div>
+  </section>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">lx9zi</a>.
+
+</body>
+<script src="js.js"></script>
+
+</html>
